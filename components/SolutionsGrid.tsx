@@ -39,9 +39,9 @@ const photos = [
   { src: '/images/racks.jpg', alt: 'Patched network rack' },
   { src: '/images/net.jpg', alt: 'Engineer monitoring a data center' },
   { src: '/images/cctv.jpg', alt: 'CCTV cameras and recorder' },
-  { src: '/images/servroom.jpg', alt: 'Business servers' },
-  { src: '/images/storsrv.jpg', alt: 'Storage and backup systems' },
-  { src: '/images/commmain.jpg', alt: 'IP phones and headsets' },
+  { src: '/images/servroom.jpg', right: true, alt: 'Business servers' },
+  { src: '/images/storsrv.jpg', right: true, alt: 'Storage and backup systems' },
+  { src: '/images/commmain.jpg', right: true, alt: 'IP phones and headsets' },
   { src: '/images/plan.jpg', alt: 'Consultants planning a project', fill: true },
   { src: '/images/hwslide.jpg', alt: 'Office computers and printers' },
 ]
@@ -101,7 +101,7 @@ export default function SolutionsGrid() {
         <div className="sgp rv">
           <div className="sgm">
             {photos.map((ph, k) => (
-              <img key={ph.src} loading="lazy" decoding="async" src={ph.src} alt={k === cur ? ph.alt : ''} aria-hidden={k !== cur} className={(k === cur ? 'on' : '') + (ph.fill ? ' fill' : '')} />
+              <img key={ph.src} loading="lazy" decoding="async" src={ph.src} alt={k === cur ? ph.alt : ''} aria-hidden={k !== cur} className={(k === cur ? 'on' : '') + (ph.fill ? ' fill' : '') + (ph.right ? ' r' : '')} />
             ))}
           </div>
           <i className="sgo" aria-hidden="true" />

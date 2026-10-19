@@ -1357,3 +1357,9 @@ html[dir=rtl] .pbk{flex-direction:row-reverse}
 .sgm img.on{opacity:1}
 .sgm img.fill{object-fit:cover}
 .sgk.top{transition:border-color .25s,box-shadow .25s,transform .25s}
+/* Solutions panel: photo fills the whole card */
+.sgm{inset:0;top:0;bottom:0}
+.sgm img{object-fit:cover;object-position:center}
+.sgo{background:radial-gradient(40% 26% at 74% 46%,#f2c31233,transparent 72%),linear-gradient(180deg,#0b1a33e0 0%,#0b1a3366 22%,#0b1a3326 45%,#0b1a3340 65%,#0b1a33d9 100%)}
+.sgo::after{opacity:.18}
+.sgm img.r{object-position:85% center}
