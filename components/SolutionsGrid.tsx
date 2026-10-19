@@ -36,7 +36,7 @@ const blurbs = [
 
 // Panel photo for each solution, same order as content/solutions.json.
 const photos = [
-  { src: '/images/racks.jpg', alt: 'Patched network rack' },
+  { src: '/images/cabling.jpg', right: true, alt: 'Structured cabling in a server room' },
   { src: '/images/net.jpg', alt: 'Engineer monitoring a data center' },
   { src: '/images/cctv.jpg', alt: 'CCTV cameras and recorder' },
   { src: '/images/servroom.jpg', right: true, alt: 'Business servers' },
